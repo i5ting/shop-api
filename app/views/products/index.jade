@@ -1,0 +1,27 @@
+extends ../layouts/layout
+
+block content
+  h1 Listing products
+
+  table
+    thead
+      tr
+        each n in ['name','detail','sales_num','price','slides','category','type','remark','created_at','updated_at','is_delete','is_index','is_top_slide','recommend']
+          th #{n}
+        th(colspan="3")
+    tbody
+      each product in products
+        tr
+          each n in ['product.name','product.detail','product.sales_num','product.price','product.slides','product.category','product.type','product.remark','product.created_at','product.updated_at','product.is_delete','product.is_index','product.is_top_slide','product.recommend']
+            td #{ eval(n) }
+          td 
+            a(href='/products/#{ product._id}') Show
+          td 
+            a(href='/products/#{ product._id}/edit') Edit
+          td 
+            a(onclick="click_del('/products/#{ product._id}/')") Delete
+
+  br
+
+  p 
+    a(href='/products/new') New Product

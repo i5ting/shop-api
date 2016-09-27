@@ -1,0 +1,249 @@
+extends layouts/layout
+
+block content
+
+  .page
+    header.bar.bar-nav
+      a.icon.icon-menu.pull-left
+      |         
+      a.icon.icon-me.pull-right
+      |         
+      a.icon.icon-cart.pull-right(style='right: 10px;')
+      |         
+      h1.title StuQ&#x5546;&#x57CE;
+    |       
+    .content
+      // Content of page
+      .back-top.active(back-top='')
+      // slide
+      .section.loop-banner
+        .swiper-container(data-space-between='10', data-pagination='.swiper-pagination', data-autoplay='1000')
+          .swiper-wrapper
+            .swiper-slide
+              img(src='images/index/wap-home-0822-banner_93055651da.png', alt='')
+            |                
+            .swiper-slide
+              img(src='images/index/wap-home-jiangguofeeling-banner_3a38f476e2.png', alt='')
+            |                
+            .swiper-slide
+              img(src='images/index/wap-home-redS1000-banner_c5bc33e847.png', alt='')
+          |              
+          |              
+          .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets
+            span.swiper-pagination-bullet.swiper-pagination-bullet-active
+            |                
+            span.swiper-pagination-bullet
+            span.swiper-pagination-bullet
+            |                
+            span.swiper-pagination-bullet
+            span.swiper-pagination-bullet
+            |                
+            span.swiper-pagination-bullet
+            span.swiper-pagination-bullet
+      // intro
+      .section2
+        ul(style='width:50%;float:left;padding:0')
+          a(href='/category.html')
+            img(src='images/index/1c09d7c990f86a80f20a2fa6fe06758a.png', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+        |           
+        |           
+        ul(style='width:50%;float:left;left:1%;padding:0')
+          a(href='/category.html')
+            img(src='images/index/7a8158eec18ef0714a17b0915658c39c.png', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+      // list
+      .content-block-title &#x5F53;&#x5B63;&#xFF08;&#x79CB;&#xFF09;&#x63A8;&#x8350;
+      |         
+      .section3
+        ul.cell-list
+          li.product
+            a(href='#')
+              img(src='images/index/cell-1@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-2@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-3@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-4@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+      // list
+      .content-block-title &#x56DB;&#x5B63;&#x6B4C;
+      |         
+      .section2
+        ul(style='width:50%;float:left;padding:0')
+          a(href='#')
+            img(src='images/index/1c09d7c990f86a80f20a2fa6fe06758a.png', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+        |           
+        |           
+        ul(style='width:50%;float:left;left:1%;padding:0')
+          a(href='#')
+            img(src='images/index/7a8158eec18ef0714a17b0915658c39c.png', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+      // list
+      .content-block-title &#x5546;&#x57CE;
+      |         
+      .section3
+        ul.cell-list
+          li.product
+            a(href='#')
+              img(src='images/index/cell-1@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-2@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+      |         
+      |         
+      |        
+      .footer
+        .siteinfo
+          span &#x8BA2;&#x5355;&#x670D;&#x52A1;
+          |           
+          span &#x670D;&#x52A1;&#x652F;&#x6301;
+          |           
+          span &#x5A92;&#x4F53;&#x4E2D;&#x5FC3;
+          |           
+          span &#x5173;&#x4E8E;&#x516C;&#x53F8;
+        |         
+        .copyright
+          h2
+            | Copyright &copy; 
+            span(copyright-year='') 2016
+            | , Smartisan Digital Co., Ltd. All Rights Reserved.
+          |          
+          h3.company &#x5317;&#x4EAC;&#x9524;&#x5B50;&#x6570;&#x7801;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;
+          |         
+          |          
+          h4
+            a(href='http://www.miibeian.gov.cn/', target='_blank')
+              span &#x4EAC;ICP&#x5907;14041720&#x53F7;-1
+              span &#x4EAC;ICP&#x8BC1;140622&#x53F7;
+              span &#x4EAC;&#x516C;&#x7F51;&#x5B89;&#x5907;11010502025474
+      //
+        <div class="card">
+        <div style="background-image:url(images/index/wap-home-0822-banner_93055651da.png)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
+        <div class="card-content">
+        <div class="card-content-inner">
+        <p class="color-gray">发表于 2015/01/15</p>
+        <p>此处是内容...</p>
+        </div>
+        </div>
+        </div>
+  |     
+  |     
+  #router2.sss(style='display:none;position:relative;width:100%;height:100%;top:44px;background-color:white')
+    .buttons-tab
+      a.icon.icon-app.tab-link.active.button(href='#tab1')
+        |  精选
+      |            
+      a.icon.icon-gift.tab-link.button(href='#tab2') 鲜花
+      |            
+      a.icon.icon-home.tab-link.button(href='#tab3') 花园
+      |            
+      a.icon.icon-cart.tab-link.button(href='#tab4') 商城
+    |          
+    .content-block
+      .tabs
+        #tab1.tab.active
+          .content-block-title &#x8774;&#x8776;&#x82B1;
+          |                
+          .content-block
+            p 
+              a(class='aaa')
+                2016&#x300A;&#x91CC;&#x300B;
+        |              
+        #tab2.tab
+          .content-block-title &#x56DB;&#x5B63;&#x6B4C;
+          |                
+          .content-block
+            p 
+              a(class='category')
+                &#x6625;
+            |                  
+            p 
+              a(class='category')
+                &#x590F;
+            |                  
+            p &#x79CB;
+            |                  
+            p &#x51AC;
+        |              
+        #tab3.tab
+          .content-block-title &#x56DB;&#x5B63;&#x6B4C;
+          |                
+          .content-block
+            p 
+              a(class='category')
+                &#x5C45;&#x6240;
+            |                  
+            p &#x8BB0;&#x5FC6;
+            |                  
+            p &#x5149;&#x97F3;
+            |                  
+            p &#x6298;&#x601D;
+            |                  
+            p &#x5176;&#x4ED6;
+        |              
+        #tab4.tab
+          .content-block
+            p &#x4F5B;
+            |                  
+            p &#x9053;

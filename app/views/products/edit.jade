@@ -1,0 +1,11 @@
+extends ../layouts/layout
+
+block content
+  h1 Editing product
+
+  include product
+
+  a(href='/products/#{ product._id}') Show
+  span |
+  a(href='/products') Back
+

@@ -1,0 +1,14 @@
+- var _action = product._action == 'edit' ? '#' : '/products/'
+- var _method = product._action == 'edit' ? ""  : "post"
+- var _type   = product._action == 'edit' ? "button"  : "submit"
+- var onClick  = product._action == 'edit' ?  "click_edit('product-" + product._action + "-form','/products/" + product._id + "/')" : ""
+form(id='product-#{ product._action}-form',action="#{_action}", method="#{_method}",role='form')
+  each n in ['product.name','product.detail','product.sales_num','product.price','product.slides','product.category','product.type','product.remark','product.created_at','product.updated_at','product.is_delete','product.is_index','product.is_top_slide','product.recommend']
+    - m = eval(n);
+    div(class="field")
+      label #{n.split('.')[1]} #{m}
+      br
+      input(type='text',name="#{n.split('.')[1]}" ,value="#{ m == undefined ? '' : m }")
+        
+  div(class="actions") 
+    input(type='#{_type}',value='Submit',onClick='#{onClick}')

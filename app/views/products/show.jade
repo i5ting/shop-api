@@ -1,0 +1,13 @@
+extends ../layouts/layout
+
+block content
+  p#notice
+
+  each n in ['product.name','product.detail','product.sales_num','product.price','product.slides','product.category','product.type','product.remark','product.created_at','product.updated_at','product.is_delete','product.is_index','product.is_top_slide','product.recommend']
+    p
+      strong #{n.split('.')[1]}:
+      span #{eval(n)}
+
+  a(href='/products/#{ product._id}/edit') Edit
+  span |
+  a(href='/products') Back

@@ -1,0 +1,123 @@
+extends layouts/layout
+
+block content
+  .page
+    header.bar.bar-nav
+      a.icon.icon-left.pull-left(href='/')
+      |         
+      a.icon.icon-me.pull-right
+      |         
+      a.icon.icon-cart.pull-right(style='right: 10px;')
+      |         
+      h1.title &#x5546;&#x54C1;&#x8BE6;&#x60C5;
+    |       
+    .content
+      // Content of page
+      .back-top.active(back-top='')
+      // slide
+      .content-block-title 
+        h2 #{product.name}
+      |          
+      .card.demo-card-header-pic
+        .card-header.color-white.no-border.no-padding(valign='bottom')
+          img.card-cover(src='//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg', alt='')
+        |            
+        .card-content
+          .card-content-inner
+            p.color-gray 价格 ￥#{product.price}
+            p.color-gray 备注 #{product.remark}
+            |                
+            p !{product.detail}
+        |            
+        .card-footer
+          a.link(href='#') &#x8D5E;
+          |              
+          a.link(href='#') &#x66F4;&#x591A;
+      // list
+      // <div class="content-block-title">当季（秋）推荐</div>
+      .footer
+        .siteinfo
+          span &#x8BA2;&#x5355;&#x670D;&#x52A1;
+          |           
+          span &#x670D;&#x52A1;&#x652F;&#x6301;
+          |           
+          span &#x5A92;&#x4F53;&#x4E2D;&#x5FC3;
+          |           
+          span &#x5173;&#x4E8E;&#x516C;&#x53F8;
+        |         
+        .copyright
+          h2
+            | Copyright &copy; 
+            span(copyright-year='') 2016
+            | , Smartisan Digital Co., Ltd. All Rights Reserved.
+          |          
+          h3.company &#x5317;&#x4EAC;&#x9524;&#x5B50;&#x6570;&#x7801;&#x79D1;&#x6280;&#x6709;&#x9650;&#x516C;&#x53F8;
+          |         
+          |          
+          h4
+            a(href='http://www.miibeian.gov.cn/', target='_blank')
+              span &#x4EAC;ICP&#x5907;14041720&#x53F7;-1
+              span &#x4EAC;ICP&#x8BC1;140622&#x53F7;
+              span &#x4EAC;&#x516C;&#x7F51;&#x5B89;&#x5907;11010502025474
+      //
+        <div class="card">
+        <div style="background-image:url(images/index/wap-home-0822-banner_93055651da.png)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
+        <div class="card-content">
+        <div class="card-content-inner">
+        <p class="color-gray">发表于 2015/01/15</p>
+        <p>此处是内容...</p>
+        </div>
+        </div>
+        </div>
+  |     
+  |     
+  #router2.sss(style='display:none;position:relative;width:100%;height:100%;top:44px;background-color:white')
+    .buttons-tab
+      a.icon.icon-app.tab-link.active.button(href='#tab1')
+        | &#x7CBE;&#x9009;
+      |            
+      a.icon.icon-gift.tab-link.button(href='#tab2') &#x9C9C;&#x82B1;
+      |            
+      a.icon.icon-home.tab-link.button(href='#tab3') &#x82B1;&#x56ED;
+      |            
+      a.icon.icon-cart.tab-link.button(href='#tab4') &#x5546;&#x57CE;
+    |          
+    .content-block
+      .tabs
+        #tab1.tab.active
+          .content-block-title &#x8774;&#x8776;&#x82B1;
+          |                
+          .content-block
+            p 2016&#x300A;&#x91CC;&#x300B;
+        |              
+        #tab2.tab
+          .content-block-title &#x56DB;&#x5B63;&#x6B4C;
+          |                
+          .content-block
+            p &#x6625;
+            |                  
+            p &#x590F;
+            |                  
+            p &#x79CB;
+            |                  
+            p &#x51AC;
+        |              
+        #tab3.tab
+          .content-block-title &#x56DB;&#x5B63;&#x6B4C;
+          |                
+          .content-block
+            p &#x5C45;&#x6240;
+            |                  
+            p &#x8BB0;&#x5FC6;
+            |                  
+            p &#x5149;&#x97F3;
+            |                  
+            p &#x6298;&#x601D;
+            |                  
+            p &#x5176;&#x4ED6;
+        |              
+        #tab4.tab
+          .content-block
+            p &#x4F5B;
+            |                  
+            p &#x9053;

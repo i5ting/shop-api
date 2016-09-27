@@ -1,0 +1,137 @@
+extends layouts/layout
+
+block content
+
+  .page
+    header.bar.bar-nav
+      a.icon.icon-left.pull-left(href='/')
+      |         
+      a.icon.icon-me.pull-right
+      |         
+      a.icon.icon-cart.pull-right(style='right: 10px;')
+      |         
+      h1.title &#x5206;&#x7C7B;&#x5217;&#x8868;
+    |       
+    .content
+      // Content of page
+      .rank_div
+        .rank_nav.button(data_sort='') &#x7EFC;&#x5408;
+        |             
+        .rank_nav.button(data_sort='1')
+          | &#x9500;&#x91CF;
+        |             
+        .rank_nav.button(data_sort='4', style='position:relative')
+          | &#x4EF7;&#x683C;
+        |             
+        .rank_nav.button(data_sort='6')
+          | &#x6700;&#x65B0;
+        |             
+        .clear
+      // list
+      // <div class="content-block-title">当季（秋）推荐</div>
+      .section3
+        ul.cell-list
+          li.product
+            a(href='/detail.html')
+              img(src='images/index/cell-1@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-2@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-3@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-4@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-3@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-4@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-3@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
+          |             
+          li.product
+            a(href='#')
+              img(src='images/index/cell-4@2x.jpg', width='100%', height='100%', alt='1c09d7c990f86a80f20a2fa6fe06758a')
+            |               
+            .info
+              h6.ng-binding bong2S &#x5FC3;&#x7387;&#x667A;&#x80FD;&#x624B;&#x73AF;
+              |                 
+              p.ng-binding.ng-scope(ng-if='!promotionInfo[item.currentSku.skuId]') &#x5B9E;&#x65F6;&#x6307;&#x5BFC;&#x8FD0;&#x52A8;&#x3001;&#x5168;&#x5929;&#x6D3B;&#x52A8;&#x63D0;&#x9192;&#x3001;M4 &#x82AF;&#x7247;&#x5904;&#x7406;&#x5668;
+              |                 
+              p.price
+                i &#xFFE5;
+                span.ng-binding 129.00
